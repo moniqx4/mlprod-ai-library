@@ -14,6 +14,7 @@ When working with a test automation framework, these rules define the coding syn
 - Always use a functional programming approach for writing all code, including test code. Avoid using classes in the test code, and instead use functions, objects, and other functional programming constructs to organize the test code.
 - Use the syntax of the latest version of Playwright installed in package.json
 - Use the agent defined for Playwright, if using Claude, use the agent in .claude/agents, if vscode, using the mcp server defined in .vscode/mcp.json
+- Containerize the test automation framework using Docker, and ensure that the tests can be run in a containerized environment. This includes creating a Dockerfile that sets up the necessary environment for running the tests, and ensuring that the tests can be executed within a Docker container without any issues. This helps to ensure consistency across different environments and makes it easier to run the tests in CI/CD pipelines or other automated environments.
 
 **Testing Strategy & Setup:**
 - Design comprehensive E2E test suites with proper page object patterns
